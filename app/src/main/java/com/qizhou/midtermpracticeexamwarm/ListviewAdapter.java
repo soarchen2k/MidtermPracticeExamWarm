@@ -87,7 +87,7 @@ public class ListviewAdapter extends BaseAdapter {
         /*
          * https://blog.csdn.net/cuihao1128/article/details/7668161
          */
-        CheckBox checkBox = (CheckBox)convertView.findViewById(R.id.checkbox_added);
+        CheckBox checkBox = convertView.findViewById(R.id.checkbox_added);
         checkBox.setOnCheckedChangeListener((buttonView, isChecked) -> {
             if(onItemCheckedChangedListener != null)
                 onItemCheckedChangedListener.onItemCheckedChanged(buttonView, position, isChecked);

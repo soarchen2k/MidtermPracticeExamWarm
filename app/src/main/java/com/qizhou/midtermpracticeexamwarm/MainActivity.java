@@ -26,7 +26,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         shoppingCars = initShoppingCar();
-        ListView listView = (ListView) findViewById(R.id.listview);
+        ListView listView = findViewById(R.id.listview);
         listView.setItemsCanFocus(true);
 
         ListviewAdapter adapter = new ListviewAdapter(this, shoppingCars);
